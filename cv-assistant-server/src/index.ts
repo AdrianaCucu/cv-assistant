@@ -6,7 +6,7 @@ dotenv.config();
 
 const app: Express = express();
 app.use(cors()); // TODO: configure for specific origin
-const port = process.env.PORT || 3333;
+const port = process.env.PORT || 8080;
 
 app.get("/", (req: Request, res: Response) => {
     res.send("server running wooooop");
