@@ -1,4 +1,4 @@
-const server = "http://localhost:5555";
+const server = "https://cv-assistant.fly.dev";
 
 export {
     server

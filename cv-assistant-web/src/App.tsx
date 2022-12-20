@@ -1,12 +1,10 @@
 import React, { useState, useEffect } from "react";
-import logo from "./logo.svg";
 import "./App.css";
 
 import { server } from "./config";
 
 // App is a function component
 function App() {
-  // data is null initially
   const [data, setData] = useState(null);
 
   useEffect(() => {
@@ -17,13 +15,13 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
+    <div className="container mx-auto">
+      <header className="text-3xl font-bold">
+        Hello there
+      </header>
+      <p className="text-lg">
           {!data ? "Loading..." : data}
         </p>
-      </header>
     </div>
   );
 }
