@@ -3,16 +3,18 @@
     /* Visit https://aka.ms/tsconfig to read more about this file */
 
     /* Language and Environment */
-    "target": "es2016" /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */,
+    "target": "es2020" /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */,
     "lib": [
-      "es6"
+      "esnext"
     ] /* Specify a set of bundled library declaration files that describe the target runtime environment. */,
 
     /* Modules */
-    "module": "commonjs" /* Specify what module code is generated. */,
+    "module": "esnext" /* Specify what module code is generated. */,
     "rootDir": "src" /* Specify the root folder within your source files. */,
+    "moduleResolution": "node",
     "resolveJsonModule": true /* Enable importing .json files. */,
-
+    "isolatedModules": true,
+    
     /* JavaScript Support */
     "allowJs": true /* Allow JavaScript files to be a part of your program. Use the 'checkJS' option to get errors from these files. */,
     "outDir": "build",
@@ -22,7 +24,7 @@
     "forceConsistentCasingInFileNames": true /* Ensure that casing is correct in imports. */,
 
     /* Type Checking */
-    "strict": true /* Enable all strict type-checking options. */,
+    "strict": false /* Enable all strict type-checking options. */,
     "noImplicitAny": true /* Enable error reporting for expressions and declarations with an implied 'any' type. */,
     "skipLibCheck": true /* Skip type checking all .d.ts files. */
   }
